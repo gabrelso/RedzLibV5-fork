@@ -8,12 +8,12 @@ local Players = game:GetService("Players")
 local Player = Players.LocalPlayer
 local PlayerMouse = Player:GetMouse()
 
-local redzlib = {
+local local redzlib = {
 	Themes = {
 		Darker = {
 			["Color Hub 1"] = ColorSequence.new({
 				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(128, 0, 0)),
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(30, 0, 0)),
 				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))
 			}),
 			["Color Hub 2"] = Color3.fromRGB(0, 0, 0),
@@ -42,7 +42,7 @@ local redzlib = {
 }
 
 local ViewportSize = workspace.CurrentCamera.ViewportSize
-local UIScale = ViewportSize.Y / 450
+UIScale = ViewportSize.Y / 450
 
 local Settings = redzlib.Settings
 local Flags = redzlib.Flags
