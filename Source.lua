@@ -12,11 +12,11 @@ local redzlib = {
 	Themes = {
 		Purple = {
 			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(10, 0, 0)),  
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(25, 0, 0)),  
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(10, 0, 0))   
+				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),  
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(10, 0, 0)),  
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))   
 			}),
-			["Color Hub 2"] = Color3.fromRGB(30, 0, 0),  
+			["Color Hub 2"] = Color3.fromRGB(0, 0, 0),  
 			["Color Stroke"] = Color3.fromRGB(40, 0, 0),  
 			["Color Theme"] = Color3.fromRGB(255, 0, 0),  
 			["Color Text"] = Color3.fromRGB(240, 240, 240),  
@@ -40,6 +40,7 @@ local redzlib = {
 	Tabs = {},
 	Icons = loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/RedzLibV5/refs/heads/main/Icons.lua"))()
 }
+
 
 
 local ViewportSize = workspace.CurrentCamera.ViewportSize
