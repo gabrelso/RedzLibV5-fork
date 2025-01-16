@@ -12,15 +12,15 @@ local redzlib = {
 	Themes = {
 		Purple = {
 			["Color Hub 1"] = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)),  
-				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(10, 0, 0)),  
-				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 0))   
+				ColorSequenceKeypoint.new(0.00, Color3.fromRGB(10, 0, 0)),  -- Dark red
+				ColorSequenceKeypoint.new(0.50, Color3.fromRGB(25, 0, 0)),  -- Lighter red
+				ColorSequenceKeypoint.new(1.00, Color3.fromRGB(10, 0, 0))   -- Dark red
 			}),
-			["Color Hub 2"] = Color3.fromRGB(0, 0, 0),  
-			["Color Stroke"] = Color3.fromRGB(40, 0, 0),  
-			["Color Theme"] = Color3.fromRGB(255, 0, 0),  
-			["Color Text"] = Color3.fromRGB(240, 240, 240),  
-			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)  
+			["Color Hub 2"] = Color3.fromRGB(30, 0, 0),  -- Dark red
+			["Color Stroke"] = Color3.fromRGB(40, 0, 0),  -- Darker red stroke
+			["Color Theme"] = Color3.fromRGB(255, 0, 0),  -- Red theme
+			["Color Text"] = Color3.fromRGB(240, 240, 240),  -- Light text
+			["Color Dark Text"] = Color3.fromRGB(180, 180, 180)  -- Darker text
 		}
 	},
 	Info = {
@@ -29,7 +29,7 @@ local redzlib = {
 	Save = {
 		UISize = {550, 380},
 		TabSize = 160,
-		Theme = "Purple"
+		Theme = "Purple"  
 	},
 	Settings = {},
 	Connection = {},
@@ -40,8 +40,6 @@ local redzlib = {
 	Tabs = {},
 	Icons = loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/RedzLibV5/refs/heads/main/Icons.lua"))()
 }
-
-
 
 local ViewportSize = workspace.CurrentCamera.ViewportSize
 UIScale = ViewportSize.Y / 450
